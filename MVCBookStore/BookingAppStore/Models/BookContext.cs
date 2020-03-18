@@ -17,9 +17,9 @@ namespace BookingAppStore.Models
     {
         protected override void Seed(BookContext db)
         {
-            db.Books.Add(new Book { Name = "Voyna i mir", Author = "L. Tolstoy", Price = 5600 });
-            db.Books.Add(new Book { Name = "Otci i Deti", Author = "I. Turgenev", Price = 3900 });
-            db.Books.Add(new Book { Name = "Chayka", Author = "A. Chexov", Price = 2500 });
+            db.Books.Add(new Book { Name = "Պատերազմ և Խաղաղություն", Author = "Լ․ Տոլստոյ", Price = 5600 });
+            db.Books.Add(new Book { Name = "Հայրեր և որդիներ", Author = "Ի․ Տուրգենեվ", Price = 3900 });
+            db.Books.Add(new Book { Name = "Չայկա", Author = "Ա․ Չեխով", Price = 2500 });
 
             base.Seed(db);
         }
