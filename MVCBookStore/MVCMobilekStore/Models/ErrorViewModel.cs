@@ -1,6 +1,6 @@
 using System;
 
-namespace MVCMobileStore.Models
+namespace MVCMobilekStore.Models
 {
     public class ErrorViewModel
     {
