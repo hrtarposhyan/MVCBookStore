@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "Գրքի պատվեր";
+}
+
+<div>
+    <h3>Գիրք պատվիրելու ֆորմա</h3>
+    <form method="post">
+        <input type="hidden" value="@ViewBag.BookId" name="BookId" />
+        <table>
+            <tr>
+                <td><p>Գրեք ձեր անունը</p></td>
+                <td><input type="text" name="Person" /></td>
+            </tr>
+            <tr>
+                <td><p>Նշել հասցեն։</p></td>
+                <td>
+                    <input type="text" name="Address" />
+                </td>
+            </tr>
+            <tr><td><input type="submit" value="ՈՒղարկել" /> </td><td></td></tr>
+        </table>
+    </form>
+</div>
+

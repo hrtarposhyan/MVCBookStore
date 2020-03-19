@@ -9,6 +9,7 @@
             <td><p>Գրքի անուն</p></td>
             <td><p>Հեղինակ</p></td>
             <td><p>Գին</p></td>
+            <td><p></p></td>
         </tr>
         @foreach (var book in ViewBag.Books)
         {
@@ -16,6 +17,7 @@
                 <td><p>@book.Name</p></td>
                 <td><p>@book.Author</p></td>
                 <td><p>@book.Price</p></td>
+                <td><p><a href="=/Home/Buy/@book.Id">Գնել</a></p></td>
             </tr>
         }
     </table>
