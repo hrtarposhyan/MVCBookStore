@@ -1,8 +1,24 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model IEnumerable<MobileStore.Models.Phone>
+@{
+    ViewData["Title"] = "Սմարթֆոնների կատալոգ";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<h3>Սմարթֆոններ</h3>
+<table class="table-condensed">
+    <tr>
+        <td>Մոդել</td>
+        <td>Արտադրող</td>
+        <td>Գին</td>
+        <td></td>
+    </tr>
+    @foreach (var phone in Model)
+    {
+        <tr>
+            <td>@phone.Name</td>
+            <td>@phone.Company</td>
+            <td>@phone.Price</td>
+            <td><a href="~/Home/Buy/@phone.Id">Գնել</a></td>
+        </tr>
+    }
+
+</table>
